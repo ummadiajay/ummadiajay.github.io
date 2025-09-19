@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ajay Ummadi | Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;background:#ffffff;color:#000;scroll-behavior:smooth}
+
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#f0f0f0;position:sticky;top:0;z-index:10;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+    header h1{font-size:32px;color:#111;}
+    nav{display:flex;gap:20px;}
+    nav a{color:#111;text-decoration:none;font-weight:bold;transition:color 0.3s}
+    nav a:hover{color:#00796b}
+
+    section{padding:60px 20px;max-width:1100px;margin:auto}
+    section h2{text-align:center;margin-bottom:30px;font-size:32px;color:#00796b;position:relative}
+    section h2::after{content:"";display:block;width:60px;height:3px;background:#00796b;margin:10px auto 0;border-radius:2px}
+
+    .intro{padding:80px 20px;text-align:center;max-width:900px;margin:auto;line-height:1.8;color:#333;}
+    .projects, .book, .experience, .contact{margin-top:40px}
+
+    .project, .timeline-item{background:#f7f7f7;border-radius:12px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,0.1);margin-bottom:20px;transition:transform 0.3s}
+    .project:hover, .timeline-item:hover{transform:translateY(-4px);background:#e0f2f1}
+    .project h3, .timeline-item h3{color:#00796b;margin-bottom:10px}
+    .project p, .timeline-item p{color:#333;font-size:14px}
+
+    .contact form{display:flex;flex-direction:column;gap:12px;max-width:500px;margin:20px auto}
+    .contact input,.contact textarea{padding:12px;border:1px solid #ccc;border-radius:8px}
+    .contact button{padding:12px;border:none;background:#00796b;color:#fff;font-weight:bold;border-radius:8px;cursor:pointer;transition:background 0.3s}
+    .contact button:hover{background:#004d40}
+
+    footer{background:#f0f0f0;color:#555;text-align:center;padding:20px;margin-top:40px;font-size:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ajay Ummadi</h1>
+    <nav>
+      <a href="#intro">About</a>
+      <a href="#book">Book</a>
+      <a href="#education">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="intro" class="intro">
+    <p>Hello! I’m Ajay Ummadi — passionate about electronics, robotics, coding, and web development. I have industry experience as an Associate Consultant where I worked on Java full-stack projects. Currently, I am working at Maker Works as a Co-ordinator, teaching electronics and programming while developing hands-on electronics projects. I enjoy creating projects with Arduino and micro:bit, simplifying low-level code, and developing practical solutions for learning and automation.</p>
+    <div class="timeline-item">
+      <h3>Associate Consultant (GCM 1) - Atos Syntel Pvt Ltd</h3>
+      <span>Oct 2022 – Aug 2023</span>
+      <p>Trained as a Java Full Stack Developer. Worked on a capstone project “Book a Book” using React JS, Spring, Java, and MySQL.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Co-ordinator - Maker Works</h3>
+      <span>Sep 2023 – Present</span>
+      <p>Teaching electronics and programming, and developing practical electronics projects for learners and hobbyists.</p>
+    </div>
+  </section>
+
+  <section id="book">
+    <h2>My Book</h2>
+    <div class="project">
+      <h3>Arduino for Beginners</h3>
+      <p>A practical guide covering basics of Arduino, sensors, actuators, and hands-on projects.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="project">
+      <h3>Master of Computer Application - Krishna University (2019-2022)</h3>
+      <p>Aggregate: 78%</p>
+    </div>
+    <div class="project">
+      <h3>Bachelor of Science (MPE) - Sri Venkateswara Arts College (2016-2019)</h3>
+      <p>Aggregate: 75%</p>
+    </div>
+    <div class="project">
+      <h3>Senior Secondary - Krishna Chaitanya Junior College (2014-2016)</h3>
+      <p>Aggregate: 90%</p>
+    </div>
+    <div class="project">
+      <h3>SSC - KNR MP High School (2013-2014)</h3>
+      <p>CGPA: 8.2/10</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="event.preventDefault();alert('This is a demo form. Replace with your backend or email link.');">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Ajay Ummadi. All rights reserved.
+  </footer>
+
+</body>
+</html>
